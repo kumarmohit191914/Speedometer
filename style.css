@@ -1,0 +1,311 @@
+/* main css */
+
+body {
+    height: 97vh;
+    width: 97vw;
+    align-items: center;
+    background-attachment: fixed;
+    /* border: 2px solid red; */
+    background: linear-gradient(to left top, #576299, #ffc9c9);
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    zoom: 100%;
+    z-index: 10;
+    align-items: center;
+}
+
+.page {
+    margin-top: 45px;
+    display: flex;
+    /* border:2px solid red; */
+}
+
+.container {
+    /* border:2px solid red; */
+    height: 240px;
+    background-color: slategray;
+    border-radius: 36%;
+}
+
+.main {
+    display: flex;
+    /* border: 2px solid green; */
+    overflow: hidden;
+    margin-top: -30px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.speedometer {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: lightgray;
+    border: 2px solid black;
+    z-index: 5;
+    margin-bottom: -54px;
+}
+
+.dial {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    background: linear-gradient(lightblue, lightgray);
+    border: 2px solid red;
+    z-index: 2;
+}
+
+.centerdot {
+    position: absolute;
+    top: 50.5%;
+    left: 49.5%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-weight: bold;
+    border: 5px solid green;
+    border-radius: 100%;
+    z-index: 10;
+}
+
+.needle {
+    position: absolute;
+    top: 10%;
+    left: 49%;
+    width: 2px;
+    height: 40%;
+    background-color: black;
+    transform-origin: bottom center;
+    transform: rotate(-127deg);
+    z-index: 10;
+    transition: all 1s ease-in;
+}
+
+
+.line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: green;
+    z-index: 1;
+}
+
+.line1 {
+    transform: rotate(36deg);
+}
+
+.line2 {
+    transform: rotate(72deg);
+}
+
+.line3 {
+    transform: rotate(108deg);
+}
+
+.line4 {
+    transform: rotate(144deg);
+}
+
+.line5 {
+    transform: rotate(180deg);
+}
+
+.line6 {
+    transform: rotate(90deg);
+    width: 6%;
+    position: relative;
+    top: 2.5%;
+    height: 2px;
+    left: 47%;
+
+}
+
+.num1 {
+    font-size: 20px;
+    /* border: 1px solid red; */
+    width: 14px;
+    height: 30px;
+    position: relative;
+    bottom: -64%;
+    left: 20%;
+    z-index: 20;
+}
+
+.num2 {
+    font-size: 20px;
+    /* border: 1px solid red; */
+    width: 14px;
+    height: 30px;
+    position: relative;
+    bottom: -28%;
+    left: 11%;
+    z-index: 20;
+}
+
+.num3 {
+    font-size: 20px;
+    /* border: 1px solid red; */
+    width: 14px;
+    height: 30px;
+    position: relative;
+    bottom: 9%;
+    left: 18%;
+    z-index: 20;
+}
+
+.num4 {
+    font-size: 20px;
+    /* border: 1px solid red; */
+    width: 14px;
+    height: 30px;
+    position: relative;
+    bottom: 34%;
+    left: 33%;
+    z-index: 20;
+}
+
+.num5 {
+    font-size: 20px;
+    /* border: 1px solid red; */
+    width: 14px;
+    height: 30px;
+    position: relative;
+    bottom: 49%;
+    left: 56%;
+    z-index: 20;
+}
+
+.num6 {
+    font-size: 20px;
+    /* border: 1px solid red; */
+    width: 14px;
+    height: 30px;
+    position: relative;
+    bottom: 54%;
+    left: 66%;
+    z-index: 20;
+}
+
+.num7 {
+    font-size: 20px;
+    /* border: 1px solid red; */
+    width: 14px;
+    height: 30px;
+    position: relative;
+    bottom: 47%;
+    left: 74%;
+    z-index: 20;
+}
+
+.num8 {
+    font-size: 20px;
+    /* border: 1px solid red; */
+    width: 14px;
+    height: 30px;
+    position: relative;
+    bottom: 41%;
+    left: 67%;
+    z-index: 20;
+}
+
+.input {
+    /* border: 2px solid red; */
+    /*height: 27px;
+    width: 57px; */
+    position: fixed;
+    top: 69%;
+    left: 20%;
+    z-index: 12;
+    margin-left: 8%;
+}
+
+/*icons css*/
+.icons
+{
+    /* border: 2px solid red; */
+    width: 200px;
+    height: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    -ms-flex-align: start;
+    left: 11%;
+    bottom: -3%;
+    margin-left: 80px;
+}
+
+
+
+@keyframes blinker {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+
+/* fuel tank css */
+/* #fueltank{
+    animation: blinker .25s cubic-bezier(.5, 0, 1, 1) infinite alternate;
+} */
+
+/* battery icon css */
+/* #battery{
+    animation: blinker .25s cubic-bezier(.5, 0, 1, 1) infinite alternate;
+} */
+
+/*seatbelt icon*/
+#seatbelt{
+    margin-top: 15px;
+    margin-left: 10px;
+    /* animation: blinker .25s cubic-bezier(.5, 0, 1, 1) infinite alternate; */
+}
+
+.a{
+    border:2px solid darkslategray;
+    width:50px;
+    height: 50px;
+    border-radius: 100%;
+    z-index: 1;
+    background-color: darkslategrey;
+    zoom: 60%;
+    margin-top: 10px;
+    margin-left: 10px;
+    /* animation: blinker .25s cubic-bezier(.5, 0, 1, 1) infinite alternate; */
+}
+.b{
+    border:2px solid lightgray;
+    width:40px;
+    margin:4px;
+    border-radius: 100%;
+    height: 40px;
+    z-index: 2;
+    background-color: lightgray;
+}
+.c{
+    border: 2px solid cadetblue;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    margin: 8px;
+    z-index: 3;
+    background-color: cadetblue;
+}
+
+#cardoor{
+    /* animation: blinker .25s cubic-bezier(.5, 0, 1, 1) infinite alternate; */
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 8px;
+}

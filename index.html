@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="page">
+            <div class="main">
+                <div class="speedometer">
+                    <div class="dial"></div>
+                    <div class="needle"></div>
+                    <div class="centerdot"></div>
+                    <div class="line line1"></div>
+                    <div class="line line2"></div>
+                    <div class="line line3"></div>
+                    <div class="line line4"></div>
+                    <div class="line line5"></div>
+                    <div class="line line6"></div>
+                    <div class="num1">0</div>
+                    <div class="num2">20</div>
+                    <div class="num3">40</div>
+                    <div class="num4">60</div>
+                    <div class="num5">80</div>
+                    <div class="num6">100</div>
+                    <div class="num7">120</div>
+                    <div class="num8">140</div>
+                </div>
+
+            </div>
+            <div class="main">
+                <div class="speedometer">
+                    <div class="dial"></div>
+                    <div class="needle"></div>
+                    <div class="centerdot"></div>
+                    <div class="line line1"></div>
+                    <div class="line line2"></div>
+                    <div class="line line3"></div>
+                    <div class="line line4"></div>
+                    <div class="line line5"></div>
+                    <div class="line line6"></div>
+                    <div class="num1">0</div>
+                    <div class="num2">20</div>
+                    <div class="num3">40</div>
+                    <div class="num4">60</div>
+                    <div class="num5">80</div>
+                    <div class="num6">100</div>
+                    <div class="num7">120</div>
+                    <div class="num8">140</div>
+                </div>
+
+            </div>
+            <!-- <div class="input">
+                <button onclick="f0()">0</button>
+                <button onclick="f01()">10</button>
+                <button onclick="f1()">20</button>
+                <button onclick="f12()">30</button>
+                <button onclick="f2()">40</button>
+                <button onclick="f23()">50</button>
+                <button onclick="f3()">60</button>
+                <button onclick="f34()">70</button>
+                <button onclick="f4()">80</button>
+                <button onclick="f45()">90</button>
+                <button onclick="f5()">100</button>
+                <button onclick="f56()">110</button>
+                <button onclick="f6()">120</button>
+                <button onclick="f67()">130</button>
+                <button onclick="f7()">140</button>
+            </div> -->
+
+        </div>
+        <!-- icons html -->
+        <div class="icons">
+            <i class="fa-solid fa-gas-pump" id="fueltank" style="margin-left:8px;margin-top:10px;font-size:28px;color:red;"></i>
+            <i class="fa-solid fa-car-battery" style="margin-left:8px;margin-top:10px;font-size:28px;color:red;"></i>
+            <i class="fa fa-solid fa-bacon" id="seatbelt"></i>
+            <div class="a">
+                <div class="b">
+                    <div class="c"></div>
+                </div>
+            </div>
+            <img src="car.png" id="cardoor" alt="" srcset="">
+        </div>
+
+        <script>
+            function m1() {
+                let d = 1;
+                if (d == 1) {
+                    document.getElementById("fueltank").style.animation = "blinker .25s cubic-bezier(.5, 0, 1, 1) infinite alternate";
+                }
+            }
+            m1();
+        </script>
+
+
+        <!-- <script>
+            function f0() {
+                document.getElementsByClassName("needle")[0].style.transform = "rotate(-127deg)";
+                document.getElementsByClassName("needle")[1].style.transform = "rotate(-127deg)";
+            }
+            function f01() {
+                document.getElementsByClassName("needle")[0].style.transform = "rotate(-108.5deg)";
+                document.getElementsByClassName("needle")[1].style.transform = "rotate(-108.5deg)";
+            }
+            function f1() {
+                document.getElementsByClassName("needle")[0].style.transform = "rotate(-90deg)";
+                document.getElementsByClassName("needle")[1].style.transform = "rotate(-90deg)";
+            }
+            function f12() {
+                document.getElementsByClassName("needle")[0].style.transform = "rotate(-72deg)";
+                document.getElementsByClassName("needle")[1].style.transform = "rotate(-72deg)";
+            }
+            function f2() {
+                document.getElementsByClassName("needle")[0].style.transform = "rotate(-54deg)";
+                document.getElementsByClassName("needle")[1].style.transform = "rotate(-54deg)";
+            }
+            function f23() {
+                document.getElementsByClassName("needle")[0].style.transform = "rotate(-36deg)";
+                document.getElementsByClassName("needle")[1].style.transform = "rotate(-36deg)";
+            }
+            function f3() {
+                document.getElementsByClassName("needle")[0].style.transform = "rotate(-18deg)";
+                document.getElementsByClassName("needle")[1].style.transform = "rotate(-18deg)";
+            }
+            function f34() {
+                document.getElementsByClassName("needle")[0].style.transform = "rotate(0deg)";
+                document.getElementsByClassName("needle")[1].style.transform = "rotate(0deg)";
+            }
+            function f4() {
+                document.getElementsByClassName("needle")[0].style.transform = "rotate(18deg)";
+                document.getElementsByClassName("needle")[1].style.transform = "rotate(18deg)";
+            }
+            function f45() {
+                document.getElementsByClassName("needle")[0].style.transform = "rotate(36deg)";
+                document.getElementsByClassName("needle")[1].style.transform = "rotate(36deg)";
+            }
+            function f5() {
+                document.getElementsByClassName("needle")[0].style.transform = "rotate(54deg)";
+                document.getElementsByClassName("needle")[1].style.transform = "rotate(54deg)";
+            }
+            function f56() {
+                document.getElementsByClassName("needle")[0].style.transform = "rotate(72deg)";
+                document.getElementsByClassName("needle")[1].style.transform = "rotate(72deg)";
+            }
+            function f6() {
+                document.getElementsByClassName("needle")[0].style.transform = "rotate(90deg)";
+                document.getElementsByClassName("needle")[1].style.transform = "rotate(90deg)";
+            }
+            function f67() {
+                document.getElementsByClassName("needle")[0].style.transform = "rotate(108deg)";
+                document.getElementsByClassName("needle")[1].style.transform = "rotate(108deg)";
+            }
+            function f7() {
+                document.getElementsByClassName("needle")[0].style.transform = "rotate(126deg)";
+                document.getElementsByClassName("needle")[1].style.transform = "rotate(126deg)";
+            }
+
+
+        </script> -->
+
+</body>
+
+</html>
